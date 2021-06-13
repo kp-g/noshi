@@ -2,52 +2,61 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+  
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=RocknRoll+One&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="jquery.bxslider.min.js"></script>
   <title>のし</title>
 </head>
 <body>
   <header>
+    <nav>
 <ul>
-  <li>のしとは</li>
-  <li>書き方</li>
-  <li>選び方</li>
-  <li>包装の仕方</li>
+  <li><a href="#about">のしとは</a></li>
+  <li><a href="#step1">選び方</a></li>
+  <li><a href="">書き方</a></li>
+  <li><a>包装の仕方</a></li>
 </ul>
+</nav>
   </header>
-  <div class="firstview">
-    <img src="image/firstviwe.png" alt="">
+  
+<div class="main">
+  
 </div>
 
-  <div class="about">
-    <h3>のしとは</h3>
+  <div class="about" id="about">
+    <div class="title_1">のしとは</div>
     <p>のしとは水引とのし紙から出来たもので、<br>何か大切なことに対して贈り物をする際に、誰がどの<br>ようなことに対して贈ったかを知ることのできる短い手紙のようなものです。</p>
-    <img src="image/about.png" alt="">
-
+    <div class="about_img"></div>
+    
   </div>
 
   <div class="step">
-    <h3>のしの為の3Step</h3>
+    <div class="title_2">のしの為の3Step</div>
     <p>のしは難しく考えられがちですが、<br>選ぶ・書く・巻くの3stepで出来ちゃいます。</p>
     <div class="select">
-      <img src="image/select.png" alt="">
+      <a href="#step1"><img src="image/select_1.png" alt="" width="200"></a>
       <p>Step1</p>
       <h3>選ぶ</h3>
     </div>
     <div class="write">
-      <img src="image/write.png" alt="">
+      <a href="#step2"><img src="image/write_1.png" alt="" width="200"></a>
       <p>Step2</p>
       <h3>書く</h3>
     </div>
     <div class="wrap">
-      <img src="image/wrap.png" alt="">
+      <a href="#step3">
+      <img src="image/wrap_1.png" alt="" width="200"></a>
       <p>Step3</p>
       <h3>巻く</h3>
     </div>
@@ -55,64 +64,117 @@
 
 <div class="step1">
   <h2 class="number">Step1</h2>
-  <h3>テーマを選ぶ</h3>
-  <p>のしにはテーマ選びが必要不可欠です、<br>どのようなことに対しての贈り物かしっかりと考えて選びましょう。</p>
+  <div class="title_3" id="step1">テーマを選ぶ</div>
+  <p class="title_3p"> のしにはテーマ選びが必要不可欠です、<br>どのようなことに対しての贈り物かしっかりと考えて選びましょう。</p>
+  <div class="slider">
+   <a href="#theme_1"><div><img src="image/step1_1.png" alt="" width="229" height="275"></div></a>
 
-</div>
+    <div><a href="#theme_2"><img src="image/step1_2.png" alt="" width="229" height="275"></a></div>
+    <div><a href="#theme_3"><img src="image/step1_3.png" alt="" width="229" height="275"></a></div>
+    <div><a href="#theme_1"> <img src="image/step1_4.png" alt="" width="229" height="275"></a></div>
+  </div>
+
 
 <div class="theme">
 
-  <div class="theme_1">
-    <div class="left"><img src="image/theme1.png" alt=""></div>
-    <div class="right">
-<h3>紅白蝶結び</h3>
-<p>一般的なお祝い事に用いられます。</p>
-<h4></h4>
-</div>
-  </div>
-
-  <div class="theme_1">
+  <div class="theme_1" id="theme_1" >
     <div class="left">
-      <h3>結び切り</h3>
+      <img src="image/theme1.png" alt="" class="noshi">
+    </div>
+    <div class="right">
+      
+<h3><span>　 <img src="image/right_1.png" alt="" width="60" class="decorate"> 紅白蝶結び　</span></h3>
+<p>一般的なお祝い事に用いられます。</p>
+
+<div class="ex">
+<h5 >・出産<br>
+  ・入学・卒業祝い<br>
+  ・お中元・お歳暮<br>
+  ・長寿祝<br>
+  ・成人祝
+  </h5>
+  </div>
+</div>
+  
+</div>
+
+  <div class="theme_2" id="theme_2">
+    <div class="left">
+      
+      <h3><span>　結び切り<img src="image/left_1.png" class="decorate" alt="" width="60" id="theme_2"> 　</span></h3>
     <p>繰り返さない方がいいお祝い事に用いられます。</p>
-    <h4></h4>
+   
+
+    <div class="ex">
+    <h5 >・婚礼<br>
+   ・お見舞い<br>
+      ・快気祝い<br>
+    </h5>
+</div>
     </div>
     <div  class="right">
-      <img src="image/theme2.png" alt="">
-    </div>
+      <img src="image/theme2.png" alt="" class="noshi">
+    
   
   </div>
+</div>
 
-  <div class="theme_1">
+  <div class="theme_3" id="theme_3">
     <div class="left">
-      <img src="image/theme3.png" alt="">
+      <img src="image/theme3.png" alt="" class="noshi">
     </div>
     <div class="right">
-    <h3>白黒結び切り</h3>
+      
+    <h3><span><img src="image/right_2.png" alt="" width="60" class="decorate"> 白黒結び切り　</span></h3>
     <p>葬式の際の通夜、香典、法要に用いられます。</p>
+   
   </div>
   </div>
 
+
+</div>
 </div>
 
 <div class="step2">
   <h2 class="number">Step2</h2>
-  <h3>表書・宛名</h3>
+  <div class="title_4" id="step2">表書・宛名</div>
   <p>のし紙は共通して表書・宛名と書く位置が<br>決まっているので、書く位置をしっかりと守る<br>ことが大切です。
   </p>
   <div class="position">
 <h4>表書・宛名の位置</h4>
+<img src="image/step3.png" alt="" width="685" height="459">
 
+  <div class="position_2">
+  <div class="position_box"><img src="image/means_1.png" alt="" width="40px"> <h5> 表書：テーマにあった言葉を書きます</h5></div>
+
+  <div class="position_box">
+    <img src="image/means_2.png" alt="" width="40"> 
+  <h5>宛名：贈り主の名前（自分の名前）</h5>
+  </div>
+  <div class="position_box">
+    <img src="image/means_3.png" alt="" width="40">
+  <h5> のし：縁起の良いお祝いの際につけます</h5>
+  </div>
   </div>
 
+<h4 class="point"><span>　書くときのポイント　</span></h4>
+<div class="point_p"> 
+<h5>・表書は宛名より大きく書く</h5>
+<h5>・文字は水引に被らないようにする</h5>
+<h5>・ペンで書くのはNG</h5>
+</div>
+  <div class='btn'>
+    <a href='more.html' target="_blank">テーマ別の詳しい書き方>></a>
+    </div>
+</div>
 </div>
 
 <div class="step3">
   <h2 class="number">Step3</h2>
-  <h3>内のし・外のし</h3>
+  <div class="title_5" id="step3">内のし・外のし</div>
   <p>内のしと外のしの違いは<br>のし紙を見えるように渡すか渡さないかです。<br>厳密には決まりがありませんが、この違いで相手に伝わ<br>る思いが大きく変わるのでしっかりと決めましょう</p>
 <div class="inside">
-  <img src="image/in.png" alt="">
+  <img src="image/in.png" alt="" >
   <h3>内のし</h3>
   <p>控えめな印象を与えるので、<br>お返しを求めない時に使われます。</p>
 </div>
@@ -125,17 +187,62 @@
 
 <div class="bonus">
   <h2 class="number">おまけ</h2>
-  <h3>渡す金額について</h3>
+  <div class="title_6">渡す金額について</div>
   <p>お金を渡す際に、気になるのは金額です。金額の基準は、<br>明確なものはなく渡す相手との関係性で大きく変化しま<br>す。これらの金額は20代・30代の一般的な金額です。<br>また、最近では現金を渡すこと・受け取ることが減ってきています。</p>
+<table>
+  <tr>
+    <th>関係性</th>
+    <th>金額</th>
+  </tr>
 
+  <tr>
+    <td>とても親しい</td>
+    <td>５万円以上</td>
+  </tr>
+
+  <tr>
+    <td>親しい</td>
+    <td>２万円〜３万円</td>
+  </tr>
+
+  <tr>
+    <td>知り合い</td>
+    <td>５千円〜１万円</td>
+  </tr>
+</table>
 </div>
 
 <div class="final">
-  <h3><span>最後に</span></h3>
+  <div class="title_7"> 最後に</div>
   <p>のしは沢山の思いが詰められたものです。しきた<br>りに囚われすぎずに気持ちを込めて相手に贈りま<br>しょう。</p>
 
 </div>
 
 <footer></footer>
+<script>
+  $(document).ready(function(){
+    $('.slider').bxSlider({
+      modde:"fade",
+      auto: "ture",
+      speed:1000,
+      pause:6000,
+     
+      contorols:"true",
+      slideMargin:36,
+      slideWidth:229,
+      minSlides:1 ,
+      maxSlides:3,
+      infiniteLoop: "true",
+      ticler:"true",
+     moveSlides: 1,
+
+      touchEnabled:"false",
+      slideWidth:229,
+      
+      
+
+    });
+  });
+</script>
 </body>
 </html>
