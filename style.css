@@ -577,15 +577,121 @@ footer{
   background-color: #c53d43;
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:390px){
+ 
+ nav li:not(:last-child){
+  border-right:none;
+}
 
+.hamburger {
+  display : block;
+  position: fixed;
+  z-index : 3;
+  top   : 12px;
+  width : 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+  color:#FEF5ED;
+}
+.hamburger span {
+  display : block;
+  position: absolute;
+  width   : 30px;
+  height  : 2px ;
+  border-bottom: 2px solid #FEF5ED;
+  left    : 6px;
+  background : #C53D43;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition   : 0.3s ease-in-out;
+  transition        : 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+  top : 16px;
+  left: 6px;
+  background :#fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform   : rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  background :#fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform   : rotate(45deg);
+  transform        : rotate(45deg);
+}
+
+nav.menu-content {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  color: #fff;
+  background: rgba(197,61,67,0.7);
+  text-align: center;
+  width: 375px;
+  opacity: 0;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+
+nav.menu-content ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 375px;
+}
+
+nav.menu-content ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 375px;
+  transition: .4s all;
+}
+nav.menu-content ul li:last-child {
+  padding-bottom: 0;
+}
+nav.menu-content ul li:hover{
+  background :#ddd;
+}
+
+nav.menu-content ul li a {
+  display: block;
+  color: #fff;
+  padding: 1em 0;
+  text-decoration :none;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.menu-content.active {
+  opacity: 100;
+
+}
+
+body{
+  width: 375px;
+}  
 header{
   width: 375px;
   height: 70px;
 }
-body{
-  width: 375px;
-}  
+
+nav ul{
+  padding: 0;
+}
+
 br{
   display: none;
 }

@@ -20,14 +20,21 @@
 </head>
 <body>
   <header>
-    <nav>
-<ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+   
+<nav class="menu-content">  
+<ul >
   <li><a href="#about">のしとは</a></li>
   <li><a href="#step1">選び方</a></li>
-  <li><a href="">書き方</a></li>
-  <li><a>包装の仕方</a></li>
+  <li><a href="#step2">書き方</a></li>
+  <li><a href="#step3">包装の仕方</a></li>
 </ul>
 </nav>
+
   </header>
   
 <div class="main">
@@ -243,6 +250,18 @@
 
     });
   });
+
+  $(function() {
+    $('.hamburger').click(function() {
+        $(this).toggleClass('active');
+ 
+        if ($(this).hasClass('active')) {
+            $('.menu-content').addClass('active');
+        } else {
+            $('.menu-content').removeClass('active');
+        }
+    });
+});
 </script>
 </body>
 </html>
