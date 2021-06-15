@@ -273,6 +273,10 @@ margin: auto;
 
   display: flex;
 }
+
+.theme_1 h3{
+  padding-bottom: 38px;
+}
 .theme_1 p{
   padding: 21px 0 21px 0;
 }
@@ -285,6 +289,9 @@ margin: auto;
   height: 449px;
   margin: 310px 276px 0px 272px ;
   display: flex;
+}
+.theme_2 h3{
+  padding-bottom: 25px;
 }
 
 .theme_2 p{
@@ -301,7 +308,9 @@ margin: auto;
   margin: 302px 276px 0px 272px ;
  display: flex;
 }
-
+.theme_3 h3{
+  padding-bottom: 20px;
+}
 .theme_3 p{
 padding-top: 34px;
 }
