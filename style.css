@@ -66,7 +66,10 @@ border-bottom: 2px solid #1C305C;
   background-image: url(image/main.png);
   background-size: cover;
 }
-
+.main img{
+  padding-left: 525px;
+  padding-top: 36px;
+}
 
 h2{
   font-size: 60px;
@@ -577,7 +580,7 @@ footer{
   background-color: #c53d43;
 }
 
-@media screen and (max-width:390px){
+@media screen and (max-width:375px){
  
  nav li:not(:last-child){
   border-right:none;
@@ -616,7 +619,7 @@ footer{
   top: 30px;
 }
 
-/* ナビ開いてる時のボタン */
+
 .hamburger.active span:nth-child(1) {
   top : 16px;
   left: 6px;
@@ -674,7 +677,6 @@ nav.menu-content ul li a {
   text-decoration :none;
 }
 
-/* このクラスを、jQueryで付与・削除する */
 nav.menu-content.active {
   opacity: 100;
 
@@ -683,6 +685,8 @@ nav.menu-content.active {
 body{
   width: 375px;
 }  
+
+
 header{
   width: 375px;
   height: 70px;
@@ -725,7 +729,16 @@ h2, h3, h4{
   background-image: url(image/main_sh.png);
   background-size: cover;
   width: 375px;
+  height: 528px;
 }
+
+.main img{
+  width: 210px;
+  padding-left: 83px;
+  padding-top: 66px;
+  height: 396px;
+}
+
 .about{
   height: 741px;
  width: 375px;
