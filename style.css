@@ -575,7 +575,8 @@ footer{
   background-color: #c53d43;
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:390px){
+
  
  nav li:not(:last-child){
   border-right:none;
@@ -678,7 +679,7 @@ nav.menu-content.active {
 }
 
 body{
-  width: 375px;
+  width: 390px;
 }  
 
 
