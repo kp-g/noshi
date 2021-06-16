@@ -577,7 +577,7 @@ footer{
 
 @media screen and (max-width:390px){
 
- 
+
  nav li:not(:last-child){
   border-right:none;
 }
@@ -686,6 +686,7 @@ body{
 header{
   width: 375px;
   height: 70px;
+  position: relative;
 }
 
 nav ul{
@@ -697,7 +698,7 @@ br{
 }
 
 p, h5{
-  font-size: 20px;
+  font-size: 16px;
  
 }
 h2, h3, h4{
@@ -706,7 +707,7 @@ h2, h3, h4{
 
 
 .title_1, .title_2, .title_3, .title_4, .title_5, .title_6, .title_7{
-  font-size: 30px;
+  font-size:25px;
 }
 
 .title_1:after, .title_1:before, .title_2:after,.title_2:before,.title_3:after,.title_3:before,.title_4:after,.title_4:before,.title_5:after,.title_5:before,.title_6:after,.title_6:before,.title_7:after,.title_7:before{
@@ -715,11 +716,11 @@ h2, h3, h4{
 }
 
 .title_1{
-  padding: 66px 0 56px 0; 
+  padding: 40px 0 20px 0; 
 }
 
 .title_2{
-  padding: 51px 0 36px 0;
+  padding: 40px 0 20px 0;
 }
 .main{
   background-image: url(image/main_sh.png);
@@ -736,11 +737,11 @@ h2, h3, h4{
 }
 
 .about{
-  height: 741px;
+  height: 600px;
  width: 375px;
 }
 .about p, .title_3p, .step p, .step2 p, .step3 p, .bonus p {
- padding: 0 25px;
+ padding: 5px 25px 0 25px;
 
 }
 .about_img{
@@ -753,7 +754,7 @@ h2, h3, h4{
 }
 
 .step{
-  height: 1166px;
+  height: 1000px;
 }
 .step img{
   width: 147px;
@@ -763,53 +764,57 @@ h2, h3, h4{
   width: 147px;
   height: 217px;
   clear: both;
-  margin: 63px 114px 0px 114px;
+  margin: 45px 114px 0px 114px;
 }
 .step h3{
-  padding: 5px 0 0 0;
+  font-size: 30px;
 }
 
 
 
 .step1{
-  height: 2876px;
+  height: 2130px;
+}
+
+.theme p{
+  padding-bottom: 26px;
 }
 
 .title_3{
-  padding: 0 0 39px 0;
+  padding-bottom: 8px;
 }
 .step1 p{
-  padding: 0 25px 86px 25px;
+  padding: 0 25px ;
 }
 .step1 h3{
-  padding-bottom: 33px;
+  padding-bottom: 11px;
 }
 .step1 h2{
-  padding: 29px 0 12px 0;
+  padding: 20px 0 10px 0;
 }
 
 .bx-wrapper{
   width: 301px;
   height: 275px;
-  margin: 0 auto;
+ margin-right: auto;
+ margin-left: auto;
+ margin-top: 30px;
+  
 }
 
 .slider img{
   margin-left: 36px;
+  
 }
 
 .theme{
   height: 2023px;
   
 }
-.theme p{
-  padding-bottom: 26px;
-}
 
 .noshi {
   width: 333px;
   height: 211px;
-  
 }
 
 .decorate{
@@ -828,57 +833,60 @@ h2, h3, h4{
   margin: 0 20px;
 }
 .theme_1{
-  height: 695px;
- margin-top: 175px;
+  height: 600px;
+ margin-top: 30px;
 flex-direction: column-reverse;
 }
 
 .theme_1 .ex{
   width: 230px;
-  height: 286px;
+  height: 130px;
 }
 
 .theme_2{
-  height: 565px;
- margin-top: 125px;
+  height: 500px;
+ margin-top: 70px;
 }
 
 .theme_2 .ex{
  width: 207px;
- height: 153px;
+ height: 70px;
 
 }
 
 .theme_3{
-  height: 511px;
-  margin-top: 125px;
+  height: 380px;
   flex-direction: column-reverse;
 }
 .theme_1 .left, .theme_2 .right , .theme_3 .left{
   margin-top: 59px;
 }
 
+.theme_1 .ex{ 
+  margin-top: 35px;
+}
+.theme_2 .ex{
+  font-size: 18px;
+}
 .ex{
-  
-  margin-top: 46px;
-  
+  font-weight: bold;
 }
 
 
 .step2{
   width: 375px;
-  height: 1363px;
+  height: 1150px;
 }
 
 .step2 .number{
 padding: 40px 0 0 0;
 }
 .title_4{
-  padding-bottom: 18px;
+  padding-bottom: 5px;
 }
 .position{
   width: 335px;
-  height: 1062px;
+  height: 880px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 34px;
@@ -887,15 +895,17 @@ padding: 40px 0 0 0;
 .position img{
   width: 325px;
   height: 233px;
- margin: 0 5px;
+ margin: 3px 5px 0 5px;
 }
 
 .point_p{
 width: 325px;
 height: 93px;
- margin: 11px 5px 127px 5px;
+ margin: 11px 5px 20px 29px;
 }
-
+.point_p h5{
+  font-size: 18px;
+}
 .btn{
   width: 315px;
   height: 54px;
@@ -906,10 +916,11 @@ height: 93px;
   padding-bottom: 15px;
 }
 .position_2{
-  margin: 0 3px 87px 15px;
+  margin: 2px 3px 50px 5px;
 }
 .position_2 h5{
-  padding: 29px 0 0 9px;
+  padding: 22px 0 0 9px;
+  font-size: 18px;
   
 }
 
@@ -926,20 +937,21 @@ height: 93px;
   height: 30px;
 }
 .position h4{
-  font-size: 25px;
-  padding: 0;
+  font-size: 20px;
+  padding: 10px 0;
 }
 .position span {
 border-bottom: none;
+font-size: 22px;
 }
 .step3{
-  height: 1874px;
+  height: 1550px;
 }
 .title_5{
-  padding: 10px 0 28px 0;
+  padding: 10px 0 5px 0;
 }
 .step3 h2{
-  padding: 63px 0  0 0;
+  padding: 40px 0  0 0;
 }
 
 .step3 img{
@@ -951,27 +963,27 @@ border-bottom: none;
 }
 .outside, .inside{
   clear: both;
- margin: 31px 20px 131px 20px;
+ margin: 20px 20px 50px 20px;
   text-align: center;
   width: 335px;
   height: 571px;
 }
 .step3 p{
-  padding: 10px 25px 50px 25px;
+  padding: 10px 25px 30px 25px;
 
 }
 .bonus{
-  height: 727px;
+  height: 580px;
 }
 
 .title_6{
-  padding-bottom: 42px;
+  padding-bottom: 7px;
 }
 .bonus h2{
-  padding: 16px 0 7px 0;
+  padding: 40px 0 7px 0;
 }
 table{
-  margin: 93px 25px 109px 25px;
+  margin: 55px 25px 10px 25px;
 
 }
 
@@ -987,15 +999,18 @@ th{
 }
 
 .final{
-  height: 295px;
+  height: 200px;
 }
 
 .title_7{
-  padding: 38px 0 33px 0;
+  padding: 38px 0 10px 0;
 }
 
 .final p{
-  font-size: 20px;
-  padding: 0 25px 96px 25px;
+  font-size: 15px;
+  padding: 0 25px 30px 25px;
 }
+
+
+
 }
