@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/favicon.ico">
   
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=RocknRoll+One&display=swap" rel="stylesheet">
@@ -76,9 +77,9 @@
   <div class="slider">
    <a href="#theme_1"><div><img src="image/step1_1.png" alt="" width="229" height="275"></div></a>
 
-    <div><a href="#theme_2"><img src="image/step1_2.png" alt="" width="229" height="275"></a></div>
-    <div><a href="#theme_3"><img src="image/step1_3.png" alt="" width="229" height="275"></a></div>
-    <div><a href="#theme_1"> <img src="image/step1_4.png" alt="" width="229" height="275"></a></div>
+    <a href="#theme_2"><div><img src="image/step1_2.png" alt="" width="229" height="275"></div></a>
+    <a href="#theme_3"><div><img src="image/step1_3.png" alt="" width="229" height="275"></div></a>
+    <a href="#theme_1"> <div><img src="image/step1_4.png" alt="" width="229" height="275"></div></a>
   </div>
 
 
@@ -262,6 +263,20 @@
         }
     });
 });
+
+$(function(){
+  $('a[href^="#"]').click(function(){
+    let speed = 800;
+    let href= $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+ 
+
+
 </script>
 </body>
 </html>
