@@ -575,8 +575,13 @@ footer{
   background-color: #c53d43;
 }
 
-@media screen and (max-width:390px){
+@media screen and (max-width:375px){
 
+  header{
+    width: 375px;
+    height: 70px;
+    
+  }
 
  nav li:not(:last-child){
   border-right:none;
@@ -586,6 +591,7 @@ footer{
   display : block;
   position: fixed;
   z-index : 3;
+  right: 13px;
   top   : 12px;
   width : 42px;
   height: 42px;
@@ -598,8 +604,8 @@ footer{
   position: absolute;
   width   : 30px;
   height  : 2px ;
+  left: 6px;
   border-bottom: 2px solid #FEF5ED;
-  left    : 6px;
   background : #C53D43;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition   : 0.3s ease-in-out;
@@ -642,22 +648,24 @@ nav.menu-content {
   color: #fff;
   background: rgba(197,61,67,0.7);
   text-align: center;
-  width: 375px;
+  width: 100%;
   opacity: 0;
   transition: opacity .6s ease, visibility .6s ease;
+
 }
 
 nav.menu-content ul {
   margin: 0 auto;
   padding: 0;
-  width: 375px;
+  width: 100%;
+ 
 }
 
 nav.menu-content ul li {
   list-style-type: none;
+  width: 100%;
   padding: 0;
-  width: 375px;
-  transition: .4s all;
+  transition:  .4s all;
 }
 nav.menu-content ul li:last-child {
   padding-bottom: 0;
@@ -670,7 +678,7 @@ nav.menu-content ul li a {
   display: block;
   color: #fff;
   padding: 1em 0;
-  text-decoration :none;
+ text-decoration: none;
 }
 
 nav.menu-content.active {
@@ -679,15 +687,11 @@ nav.menu-content.active {
 }
 
 body{
-  width: 390px;
+  width: 375px;
 }  
 
 
-header{
-  width: 375px;
-  height: 70px;
-  position: relative;
-}
+
 
 nav ul{
   padding: 0;
